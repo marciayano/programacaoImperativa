@@ -32,3 +32,18 @@ print('Bom Dia, Boa Tarde, Boa Noite!');
 console.log(soma(10, 10)) */
 let adicao = (num1, num2) => console.log(num1 + num2);
 adicao (99,1);
+
+//Neste exercício, você terá que criar uma função "FizzBuzz" que recebe dois parâmetros numéricos.
+/* A função deve atender aos seguintes requisitos:
+    Você deve imprimir os números de 1 a 10;
+    Se o número a ser impresso for um múltiplo de seu PRIMEIRO parâmetro, você deve imprimir a palavra “Fizz” em vez do número correspondente;
+    Se o número a ser impresso for um múltiplo do seu SEGUNDO parâmetro, você deve imprimir a palavra "Buzz" em vez do número correspondente;
+    Se o número for um múltiplo de AMBOS os parâmetros, você deve imprimir a palavra “FizzBuzz”.*/
+    let FizzBuzz = (num1, num2) => {
+      for (var i = 1; i <= 10; i++) {
+        if (i%num1 == 0 && i%num2 != 0) {
+        console.log('Fizz');
+    } else if (i%num2 == 0 && i%num1 != 0) {
+      console.log('Buzz');
+    } else {console.log("FizzBuzz")}}};
+    FizzBuzz(2,5);
