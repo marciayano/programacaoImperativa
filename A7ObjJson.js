@@ -22,7 +22,7 @@ let meuPais = {
   //metodos: sao funcoes atribuidas como valor, faz mais do que armazenar um dado
   //vamos criar um metodo que se chama dizerNacionalidade, com funcao anonima (sem nome)
   dizerNacionalidade: function(){
-    return 'Nasci no '+ this.nome; //palavra reservada 'this' chama uma propriedade interna do objeto
+    return 'Nasci no '+ this.nome + '\nCuja capital e: ' + this.capital; //palavra reservada 'this' chama uma propriedade interna do objeto
   }
 };
 
@@ -63,9 +63,6 @@ let paraJS = JSON.parse(paraJSON);
 
 //imprimindo...
 console.log(paraJS);
-
-//ja estao convertidos, ai sim consigo manipular
-console.log(paraJS.oModelo.toUpperCase());
 
 //PQ JSON E POPULAR?
 /* Na web, a maioria das requisições e suas respostas viajam como texto simples (transmissão de informações entre sites e aplicações web), ou seja, texto sem codificações especiais == JSON. Considerando que o JavaScript está presente em todos os navegadores modernos. Outra vantagem do JSON é que qualquer linguagem de programação pode interpretá-lo com facilidade. Na verdade, a maioria das linguagens web funcionam nativamente com JSON.
