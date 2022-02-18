@@ -1,14 +1,13 @@
 //Arrow Functions == forma mais compacta de criar funcoes. => fat arrow heuheu
+
 //Este recurso foi integrado ao JavaScript a partir da especificação ES6 (EcmaScript versão 6). E, uma de suas vantagens é que são mais concisas do que as funções clássicas.
 //sao sempre anonimas, para ter nome precisamos atribuir a uma variavel
 //nao precisa escrever 'function', nem '{return }'
 let soma = (num1, num2) => num1 + num2;
 console.log(soma(3,5));
-
 //com apenas um parametro, nao precisa de ()
 let dobro = num => console.log(num * 2);
 dobro(4);
-
 //qdo a funcao tem mais de uma linha de codigo, vc vai precisar de '{return }'
 let Par = numero => {
   if(numero %2 === 0){
