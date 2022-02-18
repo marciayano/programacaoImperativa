@@ -1,4 +1,5 @@
-// função callback é algo próximo de uma terceirização de funções.
+//CALLBACK == funcao que recebe outra funcao como parametro
+//função callback é algo próximo de uma terceirização de funções.
 //Ao invés da função principal realizar tudo, é passado para ela uma função secundária (pode ser anonima ou pode ter sido definida antes) como parâmetro, onde irá se realizar o processo.
 
 //callback definida dentro da arrow function
@@ -57,7 +58,7 @@ testandoCallback2(6,2, ImprimirMensagem => {
 
 // ======= TREINO 06 ========
 let salarioBruto = 5000;
-function getSalario(salarioBruto, callback) {
+function getSalario(callback) {
     let liquido = 0
     const inss = salarioBruto * 0.11;
     const vr = salarioBruto * 0.05;
@@ -66,7 +67,7 @@ function getSalario(salarioBruto, callback) {
     liquido = salarioBruto - descontos;
     return callback(liquido);
 }
-getSalario(salarioBruto, (resultado) => { 
+getSalario((resultado) => { 
     let salarioLiquido = resultado;
     console.log(`O salário líquido é ${salarioLiquido}`);
 });
